@@ -1,9 +1,6 @@
-# owb
-Weather report website
-
 # Webseite fuer Wetterberichten weltweit
 
-Creation: 02.02.2017 (erste Version)
+Erstellt: 02.02.2017 (erste Version)
 
 **Voraussetzungen**
 
