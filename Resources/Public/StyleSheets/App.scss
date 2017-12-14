@@ -1,0 +1,769 @@
+$defaultBackgroundColour : rgba(255, 255, 255, 0.9);
+$smallPadding : 5px;
+$mediumPadding : 17px;
+$defaultPadding : 19px;
+$defaultHeight : 570px;
+$defaultRightWindSection : 130px;
+$defaultLeftTemperature : 228px;
+$defaultLeftWeatherDescription : 210px;
+
+/* For small phone screens, designed for screens of width 290px or more */
+@media screen and (max-width : 329px) {
+    body {
+        width : 100%;
+    }
+    #wrapper {
+        font-size : 0.8em;
+        height    : 623px;
+    }
+    form, h1, #place, #resultsSummary, footer {
+        padding-left : $smallPadding;
+    }
+    form, li {
+        padding-right : $smallPadding;
+    }
+    p:first-child label:nth-child(2) {
+        display     : block;
+        padding-top : 10px;
+    }
+    /* Language options french and spanish, sunrise and sunset information, and reference to geoPlugin.com disappear */
+    #removable, ul:nth-child(2), footer p:nth-child(2) {
+        display : none;
+    }
+    h1 {
+        line-height : 100%;
+    }
+    h2 {
+        left : 5px;
+    }
+    #summary {
+        left : -13px;
+    }
+    #wind {
+        right : 0;
+        width : 73px;
+    }
+    #details {
+        padding-left : -50px;
+    }
+    li {
+        position : relative;
+        left     : -34px;
+    }
+    li:nth-child(4) {
+        margin-right : -29px;
+    }
+    footer {
+        width : 98.5%;
+    }
+}
+
+/* For medium-sized phone screens */
+@media screen and (min-width : 330px) and (max-width : 414px) {
+    body {
+        width : 100%;
+    }
+    #wrapper {
+        font-size : 0.8em;
+        height    : 623px;
+    }
+    form, h1, #place, #resultsSummary, footer {
+        padding-left : $smallPadding;
+    }
+    form, li {
+        padding-right : $smallPadding;
+    }
+    p:first-child label:nth-child(2) {
+        display     : block;
+        padding-top : 10px;
+    }
+    /* Sunrise and sunset information, spanish language option and reference to geoPlugin.com disappear */
+    #removable input:nth-of-type(2), #removable label:nth-of-type(2), ul:nth-child(2), footer p:nth-child(2) {
+        display : none;
+    }
+    h1 {
+        line-height : 100%;
+    }
+    h2 {
+        left : 5px;
+    }
+    #summary {
+        left : -13px;
+    }
+    #wind {
+        right : 0;
+        width : 73px;
+    }
+    #details {
+        padding-left : -50px;
+    }
+    li {
+        position : relative;
+        left     : -34px;
+    }
+    li:nth-child(4) {
+        margin-right : -29px;
+    }
+    footer {
+        width : 98.5%;
+    }
+}
+
+/* For larger phone screens */
+@media screen and (min-width : 415px) and (max-width : 503px) {
+    body {
+        width : 100%;
+    }
+    #wrapper {
+        font-size : 0.8em;
+        height    : 623px;
+    }
+    form, h1, #place, #resultsSummary, footer {
+        padding-left : $smallPadding;
+    }
+    form, li {
+        padding-right : $smallPadding;
+    }
+    p:first-child label:nth-child(2) {
+        display     : block;
+        padding-top : 10px;
+    }
+    h1 {
+        line-height : 100%;
+    }
+    h2 {
+        left : 55px;
+    }
+    #summary {
+        left : 37px;
+    }
+    #wind {
+        right : 0;
+        width : 160px;
+    }
+    #details {
+        padding-left : -50px;
+    }
+    /* Sunrise and sunset information and reference to geoPlugin.com disappear */
+    ul:nth-child(2), footer p:nth-child(2) {
+        display : none;
+    }
+    li {
+        position : relative;
+        left     : -34px;
+    }
+    li:nth-child(4) {
+        margin-right : -29px;
+    }
+    footer {
+        width : 98.8%;
+    }
+}
+
+/* For smallest tablet screens */
+@media screen and (min-width : 504px) and (max-width : 621px) {
+    body {
+        width : 100%;
+    }
+    #wrapper {
+        font-size : 0.8em;
+        height    : 550px;
+    }
+    form, h1, #place, #resultsSummary, footer {
+        padding-left : $smallPadding;
+    }
+    form, li {
+        padding-right : $smallPadding;
+    }
+    p:first-child label:nth-child(2) {
+        display     : block;
+        padding-top : 10px;
+    }
+    h1 {
+        line-height : 100%;
+    }
+    h2 {
+        left : 75px;
+    }
+    #summary {
+        left : 57px;
+    }
+    #wind {
+        width : 176px;
+        right : 4px;
+    }
+    #details {
+        padding-left : 0;
+    }
+    /* Sunrise and sunset information disappears */
+    ul:nth-child(2) {
+        display : none;
+    }
+    li {
+        position : relative;
+        left     : -34px;
+    }
+    li:nth-child(4) {
+        margin-right : -29px;
+    }
+    footer {
+        width : 99.1%;
+
+        p:nth-child(2) {
+            right : $smallPadding;
+        }
+    }
+}
+
+/* For smaller tablet screens */
+@media screen and (min-width : 622px) and (max-width : 689px) {
+    body {
+        width : 100%;
+    }
+    #wrapper {
+        font-size : 0.8em;
+        height    : 509px;
+    }
+    form, h1, #place, #resultsSummary, #details, footer {
+        padding-left : $smallPadding;
+    }
+    form, li {
+        padding-right : $smallPadding;
+    }
+    h1 {
+        line-height : 70%;
+    }
+    h2 {
+        left : 131px;
+    }
+    #summary {
+        left : 113px;
+    }
+    #wind {
+        right : 33px;
+        width : 176px;
+    }
+    footer {
+        width : 97.1%;
+
+        p:nth-child(2) {
+            right : $smallPadding;
+        }
+    }
+}
+
+/* For medium-sized tablet screens */
+@media screen and (min-width : 690px) and (max-width : 783px) {
+    body {
+        width : 90%;
+    }
+    #wrapper {
+        font-size : 0.8em;
+        height    : 510px;
+    }
+    form, h1, #place, #resultsSummary, #details, footer {
+        padding-left : $smallPadding;
+    }
+    form li {
+        padding-right : $smallPadding;
+    }
+    h1 {
+        line-height : 70%;
+    }
+    h2 {
+        left : 131px;
+    }
+    #summary {
+        left : 113px;
+    }
+    #wind {
+        right : 33px;
+        width : 176px;
+    }
+    footer {
+        width : 87.6%;
+
+        p:nth-child(2) {
+            right : $smallPadding;
+        }
+    }
+}
+
+/* For larger tablet screens */
+@media screen and (min-width : 784px) and (max-width : 881px) {
+    body {
+        width : 90%;
+    }
+    #wrapper {
+        font-size : 0.9em;
+        height    : 533px;
+    }
+    form, h1, #place, #resultsSummary, #details, footer {
+        padding-left : $mediumPadding;
+    }
+    form {
+        padding-right : $mediumPadding;
+    }
+    h1 {
+        line-height : 70%;
+    }
+    h2 {
+        left : 175px;
+    }
+    #summary {
+        left : 157px;
+    }
+    #wind {
+        right : 102px;
+        width : 176px;
+    }
+    li {
+        padding-right : 5px;
+    }
+    footer {
+        width : 87.8%;
+
+        p:nth-child(2) {
+            right : $mediumPadding;
+        }
+    }
+}
+
+/* For medium-sized screens */
+@media screen and (min-width : 882px) and (max-width : 989px) {
+    body {
+        width : 90%;
+    }
+    #wrapper {
+        height : $defaultHeight;
+    }
+    form, h1, #place, #resultsSummary, #details, footer {
+        padding-left : $defaultPadding;
+    }
+    form, li {
+        padding-right : $defaultPadding;
+    }
+    h1 {
+        line-height : 70%;
+    }
+    h2 {
+        left : $defaultLeftTemperature;
+    }
+    #summary {
+        left : $defaultLeftWeatherDescription;
+    }
+    #wind {
+        right : $defaultRightWindSection;
+        width : 176px;
+    }
+    footer {
+        width : 87.6%;
+
+        p:nth-child(2) {
+            right : $defaultPadding;
+        }
+    }
+}
+
+/* For medium-large screens */
+@media screen and (min-width : 990px) and (max-width : 1131px) {
+    body {
+        width : 80%;
+    }
+    #wrapper {
+        height : $defaultHeight;
+    }
+    form, h1, #place, #resultsSummary, #details, footer {
+        padding-left : $defaultPadding;
+    }
+    form, li {
+        padding-right : $defaultPadding;
+    }
+    h1 {
+        line-height : 70%;
+    }
+    h2 {
+        left : $defaultLeftTemperature;
+    }
+    #summary {
+        left : $defaultLeftWeatherDescription;
+    }
+    #wind {
+        right : $defaultRightWindSection;
+        width : 176px;
+    }
+    footer {
+        width : 78.23%;
+
+        p:nth-child(2) {
+            right : $defaultPadding;
+        }
+    }
+}
+
+/* For large screens */
+@media screen and (min-width : 1132px) and (max-width : 1321px) {
+    body {
+        width : 70%;
+    }
+    #wrapper {
+        height : $defaultHeight;
+    }
+    form, h1, #place, #resultsSummary, #details, footer {
+        padding-left : $defaultPadding;
+    }
+    form, li {
+        padding-right : $defaultPadding;
+    }
+    h1 {
+        line-height : 70%;
+    }
+    h2 {
+        left : $defaultLeftTemperature;
+    }
+    #summary {
+        left : $defaultLeftWeatherDescription;
+    }
+    #wind {
+        right : $defaultRightWindSection;
+        width : 176px;
+    }
+    footer {
+        width : 68.45%;
+
+        p:nth-child(2) {
+            right : $defaultPadding;
+        }
+    }
+}
+
+/* For extra large screens */
+@media screen and (min-width : 1322px) and (max-width : 1596px) {
+    body {
+        width : 60%;
+    }
+    #wrapper {
+        height : $defaultHeight;
+    }
+    form, h1, #place, #resultsSummary, #details, footer {
+        padding-left : $defaultPadding;
+    }
+    form, li {
+        padding-right : $defaultPadding;
+    }
+    h1 {
+        line-height : 70%;
+    }
+    h2 {
+        left : $defaultLeftTemperature;
+    }
+    #summary {
+        left : $defaultLeftWeatherDescription;
+    }
+    #wind {
+        right : $defaultRightWindSection;
+        width : 176px;
+    }
+    footer {
+        width : 58.8%;
+
+        p:nth-child(2) {
+            right : $defaultPadding;
+        }
+    }
+}
+
+/* For largest screens */
+@media screen and (min-width : 1597px) {
+    body {
+        width : 50%;
+    }
+    #wrapper {
+        height : $defaultHeight;
+    }
+    form, h1, #place, #resultsSummary, #details, footer {
+        padding-left : $defaultPadding;
+    }
+    form, li {
+        padding-right : $defaultPadding;
+    }
+    h1 {
+        line-height : 70%;
+    }
+    h2 {
+        left : $defaultLeftTemperature;
+    }
+    #summary {
+        left : $defaultLeftWeatherDescription;
+    }
+    #wind {
+        right : $defaultRightWindSection;
+        width : 176px;
+    }
+    footer {
+        width : 48.85%;
+
+        p:nth-child(2) {
+            right : $defaultPadding;
+        }
+    }
+}
+
+/* latin-ext */
+@font-face {
+    font-family   : 'Open Sans';
+    font-style    : normal;
+    font-weight   : 400;
+    src           : local('Open Sans'), local('OpenSans'),
+    url(http://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range : U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family   : 'Open Sans';
+    font-style    : normal;
+    font-weight   : 400;
+    src           : local('Open Sans'), local('OpenSans'),
+    url(http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range : U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212,
+    U+2215;
+}
+
+body, #arrow, #resultsSummary, img, #details {
+    position : relative;
+}
+
+body, footer {
+    margin : auto;
+}
+
+body {
+    background      : $defaultBackgroundColour repeat-y;
+    background-size : cover;
+    font-family     : Open Sans, sans-serif;
+}
+
+#clearDayBody {
+    background-image : url("../../../Resources/Public/Images/01d.jpg");
+}
+
+#clearNightBody {
+    background-image : url("../../../Resources/Public/Images/01n.jpg");
+}
+
+#fewCloudsDayBody {
+    background-image : url("../../../Resources/Public/Images/02d.jpg");
+}
+
+#fewCloudsNightBody {
+    background-image : url("../../../Resources/Public/Images/02n.jpg");
+}
+
+#scatteredCloudsDayBody {
+    background-image : url("../../../Resources/Public/Images/03d.jpg");
+}
+
+#scatteredCloudsNightBody {
+    background-image : url("../../../Resources/Public/Images/03n.jpg");
+}
+
+#brokenCloudsDayBody {
+    background-image : url("../../../Resources/Public/Images/04d.jpg");
+}
+
+#brokenCloudsNightBody {
+    background-image : url("../../../Resources/Public/Images/04n.jpg");
+}
+
+#rainyDayBody {
+    background-image : url("../../../Resources/Public/Images/09d.jpg");
+}
+
+#rainyNightBody {
+    background-image : url("../../../Resources/Public/Images/09n.jpg");
+}
+
+#stormDayBody {
+    background-image : url("../../../Resources/Public/Images/11d.jpg");
+}
+
+#stormNightBody {
+    background-image : url("../../../Resources/Public/Images/11n.jpg");
+}
+
+#snowyDayBody {
+    background-image : url("../../../Resources/Public/Images/13d.jpg");
+}
+
+#snowyNightBody {
+    background-image : url("../../../Resources/Public/Images/13n.jpg");
+}
+
+#foggyDayBody {
+    background-image : url("../../../Resources/Public/Images/50d.jpg");
+}
+
+#foggyNightBody {
+    background-image : url("../../../Resources/Public/Images/50n.jpg");
+}
+
+#errorBody {
+    background-image : url("../../../Resources/Public/Images/Background.jpg");
+}
+
+#wrapper, footer {
+    border-radius : 5px;
+}
+
+#wrapper, form {
+    background : $defaultBackgroundColour;
+}
+
+h1, #place, #now, ul {
+    text-align : center;
+}
+
+#wind, #summary {
+    padding-left : $defaultPadding;
+}
+
+#wind {
+    height : 80px;
+    top    : 47px;
+}
+
+#arrow {
+    margin : 0 auto;
+    width  : 70px;
+    height : 70px;
+}
+
+#shaft {
+    width      : 31px;
+    height     : 30px;
+    top        : 50%;
+    margin-top : -15px;
+    left       : 13px;
+}
+
+#head {
+    left              : 33px;
+    width             : 22px;
+    height            : 21px;
+    top               : 25px;
+    -webkit-transform : rotate(45deg);
+    -moz-transform    : rotate(45deg);
+    -ms-transform     : rotate(45deg);
+    -o-transform      : rotate(45deg);
+    transform         : rotate(45deg);
+}
+
+h2, #summary, #wind, #shaft, #head, footer p:nth-child(2) {
+    position : absolute;
+}
+
+img {
+    top : 17px;
+}
+
+#summary {
+    top          : 100px;
+    margin-right : $defaultPadding;
+}
+
+#details {
+    top : 115px;
+}
+
+ul {
+    list-style-type : none;
+    padding-bottom  : 10px;
+}
+
+li, footer p {
+    float : left;
+}
+
+li {
+    margin-right : 5px;
+
+    span {
+        padding-left : 4px;
+    }
+}
+
+li span, form p span {
+    font-weight : bold;
+}
+
+.normalLi {
+    border-right : 2px solid lightgray;
+}
+
+.breezeHead, .highWindHead, .galeHead, .stormHead, .hurricaneHead, .breezeShaft, .highWindShaft, .galeShaft,
+.stormShaft, .hurricaneShaft {
+    border : 1px solid black;
+}
+
+.breezeShaft, .highWindShaft, .galeShaft, .stormShaft, .hurricaneShaft {
+    border-width : 1px 0 1px 1px;
+}
+
+.breezeShaft, .breezeHead {
+    background : greenyellow;
+}
+
+.highWindShaft, .highWindHead {
+    background : yellow;
+}
+
+.galeShaft, .galeHead {
+    background : orange;
+}
+
+.stormShaft, .stormHead {
+    background : orangered;
+}
+
+.hurricaneShaft, .hurricaneHead {
+    background : red;
+}
+
+.errorShaft, .errorHead {
+    border-top : white;
+}
+
+.errorShaft {
+    border-bottom : white;
+    border-left   : white;
+}
+
+.breezeHead, .highWindHead, .galeHead, .stormHead, .hurricaneHead {
+    border-width : 1px 1px 0 0;
+}
+
+.errorHead {
+    border-right : white;
+}
+
+form {
+    border : 1px solid white;
+}
+
+#removable {
+    font-weight : normal;
+}
+
+footer {
+    position : fixed;
+    bottom   : 0;
+}
+
+#normalFooter {
+    background : rgba(255, 255, 255, 0.7);
+}
+
+#errorFooter {
+    background : rgba(255, 255, 255, 0);
+}

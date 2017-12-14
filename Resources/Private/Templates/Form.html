@@ -1,0 +1,49 @@
+<body id="###BODY###" onload="alterButton()">
+<div id="wrapper">
+    <form method="post">
+        <p>
+            <label><span id="city_label">###CITY_LABEL###</span>
+                <input type="text" name="city" placeholder="Jena" id="city" autofocus required>
+            </label>
+            <label><span id="country">###COUNTRY###</span>
+                <select name="country" id="nation">
+                    <!--Can be extended to add more countries, improving accuracy-->
+                    <option value="DE" id="germany">###GERMANY###</option>
+                    <option value="GB" id="uk">###UK###</option>
+                    <option value="FR" id="france">###FRANCE###</option>
+                    <option value="EA" id="spain">###SPAIN###</option>
+                    <option value="AT" id="austria">###AUSTRIA###</option>
+                    <option value="CH" id="switzerland">###SWITZERLAND###</option>
+                    <option value="LI" id="liechtenstein">###LIECHTENSTEIN###</option>
+                    <option value="LU" id="luxembourg">###LUXEMBOURG###</option>
+                    <option value="BE" id="belgium">###BELGIUM###</option>
+                    <option value="AU" id="australia">###AUSTRALIA###</option>
+                    <option value="NZ" id="new_zealand">###NEW_ZEALAND###</option>
+                    <option value="CA" id="canada">###CANADA###</option>
+                    <option value="IE" id="ireland">###IRELAND###</option>
+                    <option value="" id="other">###OTHER###</option>
+                </select>
+            </label>
+        </p>
+        <p><span id="language">###LANGUAGE###</span>
+            <input type="radio" name="language" value="de" id="german" required ###CHECK_OPTION_DE###>
+            <label for="german">###GERMAN###</label>
+            <input type="radio" name="language" value="en" id="english" ###CHECK_OPTION_EN###>
+            <label for="english">###ENGLISH###</label>
+            <span id="removable">
+                <input type="radio" name="language" value="fr" id="french" ###CHECK_OPTION_FR###>
+                <label for="french">###FRENCH###</label>
+                <input type="radio" name="language" value="es" id="spanish" ###CHECK_OPTION_ES###>
+                <label for="spanish">###SPANISH###</label>
+            </span>
+        </p>
+        <p><span id="units">###UNITS###</span>
+            <input type="radio" name="units" value="metric" id="metric" required ###CHECK_OPTION_METRIC###>
+            <label for="metric">###METRIC###</label>
+            <input type="radio" name="units" value="imperial" id="imperial" ###CHECK_OPTION_IMPERIAL###>
+            <label for="imperial">###IMPERIAL###</label>
+        </p>
+        <p>
+            <input type="submit" name="###ENTER###" value="###ENTER###" id="button" onclick="getNewReport()">
+        </p>
+    </form>
