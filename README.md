@@ -1,4 +1,4 @@
-# Webseite fuer Wetterberichten weltweit
+# Webseite für Wetterberichten weltweit
 
 Erstellt: 02.02.2017 (erste Version)
 
@@ -13,3 +13,5 @@ http://openweathermap.org.
 Die Webseite wird angerufen. Ein kurzes Formular und das Wetter in Jena, Deutschland oder der Stadt des Benutzers werden 
 erzeugt. Nachdem das Formular gesendet wird, bekommt den Anwender alle vorhandene Informationen ueber das jetzige Wetter 
 in der ausgewaehlten Stadt.
+
+Das Graphikdesign wurde zum großen Teil von einer Mitarbeiterin gemacht.
