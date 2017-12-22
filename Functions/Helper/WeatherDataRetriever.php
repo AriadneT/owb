@@ -27,7 +27,9 @@ function getDataFromJson($formEntries, $configurations)
         $originalData = json_decode($json, $configurations['defaults']['jsonDecode']);
         $data = array_values_recursive($originalData);
         // Add the id weather with a unique key because it would otherwise be overlaid by the id for city
-        $data['weather_id'] = $originalData['weather'][0]['id'];
+        if (isset($originalData['weather'])) {
+            $data['weather_id'] = $originalData['weather'][0]['id'];
+        }
     }
 
     return $data;
