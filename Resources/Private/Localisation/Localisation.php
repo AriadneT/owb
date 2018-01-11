@@ -44,7 +44,6 @@ return [
                 '###NEW_ZEALAND###' => 'Neuseeland',
                 '###CANADA###' => 'Kanada',
                 '###IRELAND###' => 'Irland',
-                '###OTHER###' => 'Sonstige',
                 '###PHOTO_BY###' => 'Foto von',
                 '###FOOTER###' => 'normalFooter'
             ],
@@ -76,7 +75,6 @@ return [
                 '###NEW_ZEALAND###' => 'Neuseeland',
                 '###CANADA###' => 'Kanada',
                 '###IRELAND###' => 'Irland',
-                '###OTHER###' => 'Sonstige',
                 '###CITY_VALUE###' => 'Stadt nicht gefunden',
                 '###COUNTRY_VALUE###' => ' ',
                 '###LON_VALUE###' => ' ',
@@ -139,7 +137,6 @@ return [
                 '###NEW_ZEALAND###' => 'New Zealand',
                 '###CANADA###' => 'Canada',
                 '###IRELAND###' => 'Ireland',
-                '###OTHER###' => 'Other',
                 '###PHOTO_BY###' => 'Photo by',
                 '###FOOTER###' => 'normalFooter'
             ],
@@ -171,7 +168,6 @@ return [
                 '###NEW_ZEALAND###' => 'New Zealand',
                 '###CANADA###' => 'Canada',
                 '###IRELAND###' => 'Ireland',
-                '###OTHER###' => 'Other',
                 '###CITY_VALUE###' => 'the city was not found',
                 '###COUNTRY_VALUE###' => ' ',
                 '###LON_VALUE###' => ' ',
@@ -233,7 +229,6 @@ return [
                 '###NEW_ZEALAND###' => 'Nouvelle-Zélande',
                 '###CANADA###' => 'Canada',
                 '###IRELAND###' => 'Irlande',
-                '###OTHER###' => 'Divers',
                 '###LUXEMBOURG###' => 'Luxembourg',
                 '###PHOTO_BY###' => 'Photo par',
                 '###FOOTER###' => 'normalFooter'
@@ -266,7 +261,6 @@ return [
                 '###NEW_ZEALAND###' => 'Nouvelle-Zélande',
                 '###CANADA###' => 'Canada',
                 '###IRELAND###' => 'Irlande',
-                '###OTHER###' => 'Divers',
                 '###CITY_VALUE###' => "La ville n'a pu être trouvée",
                 '###COUNTRY_VALUE###' => ' ',
                 '###LON_VALUE###' => ' ',
@@ -327,7 +321,6 @@ return [
                 '###NEW_ZEALAND###' => 'Nueva Zelanda',
                 '###CANADA###' => 'Canadá',
                 '###IRELAND###' => 'Irlanda',
-                '###OTHER###' => 'Otro',
                 '###AUSTRALIA###' => 'Australia',
                 '###PHOTO_BY###' => 'Foto por',
                 '###FOOTER###' => 'normalFooter'
@@ -360,7 +353,6 @@ return [
                 '###NEW_ZEALAND###' => 'Nueva Zelanda',
                 '###CANADA###' => 'Canadá',
                 '###IRELAND###' => 'Irlanda',
-                '###OTHER###' => 'Otro',
                 '###CITY_VALUE###' => 'ciudad no se pudo encontrar',
                 '###COUNTRY_VALUE###' => ' ',
                 '###LON_VALUE###' => ' ',
